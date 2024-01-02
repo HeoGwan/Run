@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Gem : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
     [SerializeField]
-    private float _disapperTime = 1.5f;
+    private float _disapperTime = 5f;
 
     void Start()
     {
@@ -17,9 +16,7 @@ public class Gem : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StopAllCoroutines();
-            Destroy(gameObject);
-            GameManager.instance.GetPoint();
+            GameManager.instance.GameOver();
         }
     }
 

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager       instance;
 
     [SerializeField]
-    private Human human;
+    private Human                   human;
 
-    [SerializeField]
-    public PlaneManager planeManager;
+    public PlaneManager             planeManager;
+    public ObstacleManager          obstacleManager;
+
 
     private void Awake()
     {
@@ -20,6 +21,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    /*
+     * public functions
+    */
     public void GetPoint()
     {
         human.GetPoint();
@@ -28,5 +33,10 @@ public class GameManager : MonoBehaviour
     public void MovePlane()
     {
         planeManager.MovePlane();
+    }
+
+    public void GameOver()
+    {
+        human.Die();
     }
 }

@@ -796,7 +796,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -811,10 +811,10 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 8db4adbc-3ef6-4eea-ad0c-4003276b5dd9
+  cloudProjectId: 57438f2d-2e95-4967-827c-fa264edc0bcc
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: RunWithMotionRecognition
+  projectName: RunWithMotionRecognition (1)
   organizationId: siming1105
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

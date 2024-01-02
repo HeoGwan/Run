@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Plane
   - Gem
+  - Obstacle
+  - Trigger
   layers:
   - Default
   - TransparentFX
